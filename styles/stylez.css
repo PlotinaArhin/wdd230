@@ -1,0 +1,36 @@
+body {
+    font-size: 1rem;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #f4f4f4;
+}
+
+.menu {
+    display: none;
+}
+
+.menu.open {
+    display: block;
+}
+
+.hamburger-button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.hamburger-button.open::before {
+    content: 'X';
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
