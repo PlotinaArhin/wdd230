@@ -23,8 +23,10 @@
         <img src="images/dark-theme.svg" alt="Dark mode" id="darkBtn">
     </header>
     <nav>
-        <button id="menu"></button>
+        <button id="menu" class="hamburger">&#9776;</button>
+        
         <ul class="navigation">
+            <button id="close-menu" class="close-button">&times;</button>
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="chamber/index.html">Chamber</a></li>
             <li><a href="siteplan.html">Site Plan</a></li>
@@ -65,22 +67,16 @@
         </div>
         <div class="map-container">
             <iframe width="425" height="350" src="https://www.openstreetmap.org/export/embed.html?bbox=-0.39722442626953125%2C5.562340406020452%2C-0.05390167236328126%2C5.796020350024707&amp;layer=mapnik" style="border: 1px solid black" loading="lazy"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=12/5.6792/-0.2256">View Larger Map</a></small>
-
         </div>
-
     </main>
     <footer>
         <p>&copy; <span id="year"></span> Plotina Arhin | Ghana</p>
         <p id="lastModified"></p>
     </footer>
-        <script src="scripts/getDates.js"></script>
-        <script src="scripts/hamburgerMenu.js"></script>
-        <script src="scripts/dark.js"></script>
-        <script src="scripts/visit_count.js"></script>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamburgerMenu.js"></script>
+    <script src="scripts/dark.js"></script>
+    <script src="scripts/visit_count.js"></script>
 </body>
 
 </html>
-
-
-
-

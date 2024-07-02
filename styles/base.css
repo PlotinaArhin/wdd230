@@ -29,6 +29,49 @@ header span {
     color: #fff;
 }
 
+#darkBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    width: 44px;
+    height: 44px;
+    background: none;
+    cursor: pointer;
+}
+main.dark {
+    background-color: #000;
+}
+main.dark h1 {
+    color: white;
+}
+.card.dark section {
+    border: 1px solid #333;
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 1rem 0;
+}
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+.close-button {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
 nav {
     background-color: #333;
     padding: 1rem;
@@ -72,13 +115,32 @@ h1, h2 {
     text-align: center;
 }
 
+.hero {
+    position: relative;
+}
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.hero span {
+    position: absolute;
+    left: 5%;
+    top: 40%;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
 .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 1rem;
 }
 
 .card {
+    /* flex: 1fr */
     background-color: white;
     border: 2px solid #ddd;
     border-radius: 10px;
@@ -86,8 +148,13 @@ h1, h2 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.card.larger {
-    width: auto;
+.larger {
+    /* width: auto; */
+    flex: 2;
+}
+
+.smaller{
+    flex: 1;
 }
 
 .learning-activities,
@@ -128,6 +195,17 @@ h1, h2 {
     text-decoration: underline;
 }
 
+.map-container{
+    margin: 20px;
+
+}
+
+iframe {
+    padding: 10px;
+    width: 100%;
+    height: auto;
+}
+
 footer {
     background-color: #00274c;
     color: #fff;
@@ -145,57 +223,3 @@ footer #lastModified {
     color: #8f8f8f;
 }
 
-@media only screen and (min-width: 768px) {
-    header {
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    header img {
-        margin-left: 0;
-        margin-right: 2rem;
-    }
-
-    nav ul {
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    nav li {
-        margin: 0 1rem;
-    }
-
-    main {
-        padding: 2rem;
-    }
-
-    .container {
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 2rem;
-    }
-
-    .card {
-        width: 50%;
-    }
-
-    .card.larger {
-        width: 67%;
-    }
-}
-
-@media only screen and (min-width: 1024px) {
-    .container {
-        display: flex;
-        flex-wrap: nowrap;
-        gap: 2rem;
-    }
-
-    .card {
-        flex: 1;
-    }
-
-    .card.larger {
-        flex: 2;
-    }
-}
