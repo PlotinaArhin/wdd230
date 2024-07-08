@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Springfield Chamber of Commerce</title>
+    <meta name="description" content="Join the Springfield Chamber of Commerce to promote local businesses and build a thriving community.">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <meta property="og:title" content="Join Springfield Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/heroimage.jpeg">
+    <meta property="og:url" content="http://www.springfieldchamberwebsite.com/join.html">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.jpeg" alt="Chamber of Commerce Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="directory.html">Business Directory</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="form-section">
+            <form action="thankyou.html" method="get">
+                <label for="first-name">First Name *️⃣:
+                    <input type="text" id="first-name" name="first-name" required>
+                </label>
+                <label for="last-name">Last Name *️⃣:
+                    <input type="text" id="last-name" name="last-name" required>
+                </label>
+                <label for="title">Title/Position:
+                    <input type="text" id="title" name="title" pattern="[A-Za-z\s-]{7,}" title="Only alphabets, hyphens, and spaces are allowed, minimum 7 characters">
+                </label>
+                <label for="email">Email *️⃣:
+                    <input type="email" id="email" name="email" required placeholder="example@example.com">
+                </label>
+                <label for="mobile">Mobile Phone *️⃣:
+                    <input type="tel" id="mobile" name="mobile" required>
+                </label>
+                <label for="organization">Organization Name:
+                    <input type="text" id="organization" name="organization" required>
+                </label>
+                <label for="membership">Membership Level *️⃣:
+                    <select id="membership" name="membership" required>
+                        <option value="np">NP Membership (Non-Profit, No Fee)</option>
+                        <option value="bronze">Bronze Membership </option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+                <label for="description">Organization Description:
+                    <textarea id="description" name="description"></textarea>
+                </label>
+                <input type="hidden" id="timestamp" name="timestamp" value="">
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+        <aside class="benefits-section">
+            <h2>Membership Level Benefits</h2>
+            <ul>
+                <li><strong>NP Membership 📬:</strong> No fee, basic benefits.</li>
+                <li><strong>Bronze Membership 🕊:</strong> Event discounts, newsletter, basic advertising.</li>
+                <li><strong>Silver Membership🙌</strong> All Bronze benefits, advanced advertising, priority event invitations.</li>
+                <li><strong>Gold Membership 🛬</strong> All Silver benefits, premium advertising, exclusive events, training sessions.</li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>Contact us: new york city, Springfield, +223 2070-2300, info@springfield.org</p>
+        <p>Developed by Plotina Arhin for WDD 230. Last modified: <span id="last-modified"></span></p>
+        <div class="social">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+        </div>
+    </footer>
+    <script src="scripts/timestamp.js"></script>
+</body>
+</html>
