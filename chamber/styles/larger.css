@@ -31,6 +31,40 @@
       width: 80%;
     }
   }
+
+  /* Mobile-specific styles for Discovery page */
+
+/* For screens with a maximum width of 768px (common mobile screen size) */
+@media only screen and (max-width: 768px) {
+  /* Adjust the layout for mobile screens */
+  #members-container {
+    flex-direction: column; /* Stack cards vertically on mobile */
+  }
+
+ .member-card {
+    width: 100%; /* Take up full width on mobile */
+    margin-bottom: 20px; /* Add some space between cards */
+  }
+
+ .member-card img {
+    width: 100px; /* Reduce image size on mobile */
+    height: 100px;
+  }
+
+ .list-view {
+    flex-direction: column; /* Stack list items vertically on mobile */
+  }
+
+ .list-view.member-card {
+    width: 100%; /* Take up full width on mobile */
+    margin-bottom: 20px; /* Add some space between list items */
+  }
+
+ .list-view.member-card img {
+    width: 50px; /* Reduce image size on mobile for list view */
+    height: 50px;
+  }
+}
   
   @media (max-width: 480px) {
     nav a {

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Springfield Chamber of Commerce</title>
+    <title>Springfield Chamber of Commerce - Business Directory</title>
     <meta name="description" content="Welcome to the Springfield Chamber of Commerce. Join us to promote local businesses and build a thriving community.">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/normalize.css">
@@ -33,41 +33,13 @@
         </nav>
     </header>
     <main>
-        <section class="hero">
-            <img src="images/heroimg.jpg" alt="Community Image">
-            <div class="hero-text">
-                <h1>Welcome to the Springfield Chamber of Commerce</h1>
-                <p>Join us in promoting local businesses and building a thriving community.</p>
-                <a href="membership.html" class="cta">Join Now</a>
-            </div>
-        </section>
-        <section class="events">
-            <h2>Events</h2>
-            <ul>
-                <li>Ribbon Cutting - The Diamond Shack: <span>Thursday at 1:00 p.m.</span> <a href="#">Learn More</a></li>
-            </ul>
-            <a href="events.html" class="view-all">View All Events</a>
-        </section>
-        <section class="weather">
-            <h2>Weather</h2>
-            <img src="images/cloudy.png" alt="Weather Image" class="weather">
-            <div id="weather-card">
-                <p>Partly cloudy</p>
-                <p>Humidity: 35%</p>
-                <p>Wind Chill: N/A</p>
-            </div>
-        </section>
-        <section class="spotlights">
-            <h2>Member Spotlights</h2>
-            <div class="spotlight">
-                <img src="images/trnsport.jpeg" alt="Thankful Transport">
-                <p>Thankful Transport: "We get it there for you!"</p>
-            </div>
-            <div class="spotlight">
-                <img src="images/cd.png" alt="Code Primera">
-                <p>Code Primera: After school coding!</p>
-            </div>
-        </section>
+        <div class="view-toggle">
+            <button id="grid-view">Grid View</button>
+            <button id="list-view">List View</button>
+        </div>
+        <div id="members-container" class="grid-view">
+            <!-- Member cards will be dynamically loaded here -->
+        </div>
     </main>
     <footer>
         <p>Contact us: New York City, Springfield, +223 2070-2300, info@springfield.org</p>
@@ -84,9 +56,7 @@
             </a>
         </div>
     </footer>
-    <script src="scripts/main.js"></script>
+    <script src="scripts/directory.js"></script>
 </body>
 </html>
-
-
 

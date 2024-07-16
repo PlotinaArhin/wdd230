@@ -8,7 +8,6 @@ header {
     justify-content: center;
 }
 
-
 #cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -26,8 +25,8 @@ section {
 
 img {
     width: auto;
-    max-width: 325px;
+    max-width: 100px;
     box-shadow: 0 0 30px #777;
-    height: 200px;
+    height: 100px;
     border: 1px solid #333;
 }
