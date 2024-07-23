@@ -271,6 +271,64 @@ form input[type="submit"]:hover {
   }
 }
 
+/*aboutus section*/
+.heros{
+  background-color: #f8f8f8;
+  overflow: hidden;
+}
+.headings h1{
+  color:rgb(24, 24, 126);
+  font-size:50px;
+  text-align: center;
+  margin-top: 63px;
+
+}
+.containers{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin:65px auto;
+
+}
+.heros-content{
+  flex:1;
+  margin:0px 25px;
+  font-size: 30px;
+  color: rgb(51, 27, 27); 
+}
+.heros-content h2{
+  margin-bottom: 20px;
+  color: black;
+}
+.heros-img{
+  flex:1;
+  margin:auto;
+}
+img{
+  width:100%;
+  border-radius: 20px;
+}
+.cta-button{
+  font-size: 30px ;
+  margin-top: 30px;
+  color: white;
+  background-color: rgb(71, 71, 238);
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 5px;
+}
+.cta-button:hover{
+  transform:scale(1.1);
+}
+.social-icons{
+  height:40px;
+  width:40px;
+  margin:10px;
+}
+
+
+
 /* Events Section */
 .events {
   background-color: #f7f7f7;

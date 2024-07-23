@@ -1,0 +1,106 @@
+{
+  "weeks": [
+    {
+      "week": "Week 1",
+      "links": [
+        {
+          "url": "holygrail.html",
+          "title": "Holy Grail"
+        },
+        {
+          "url": "mediaquery.html",
+          "title": "Media Query"
+        },
+        {
+          "url": "siteplan.html",
+          "title": "Site Plan"
+        },
+        {
+          "url": "activities1.html",
+          "title": "Activities 1"
+        }
+      ]
+    },
+    {
+      "week": "Week 2",
+      "links": [
+        {
+          "url": "designprinciples.html",
+          "title": "Design Principles"
+        },
+        {
+          "url": "https://codepen.io/plotinaArhin15/pen/LYKZabd",
+          "title": "CodePen"
+        },
+        {
+          "url": "bom.html",
+          "title": "BOM"
+        }
+      ]
+    },
+    {
+      "week": "Week 3",
+      "links": [
+        {
+          "url": "lazyload.html",
+          "title": "Lazy Load"
+        },
+        {
+          "url": "chamber/discovery.html",
+          "title": "Discovery"
+        },
+        {
+          "url": "bom.html",
+          "title": "BOM"
+        }
+      ]
+    },
+    {
+      "week": "Week 4",
+      "links": [
+        {
+          "url": "https://codepen.io/plotinaArhin15/pen/OJeyWmW",
+          "title": "CodePen"
+        },
+        {
+          "url": "table.html",
+          "title": "Table"
+        },
+        {
+          "url": "form.html",
+          "title": "Form"
+        }
+      ]
+    },
+    {
+      "week": "Week 5",
+      "links": [
+        {
+          "url": "https://codepen.io/plotinaArhin15/pen/xxoOBrp",
+          "title": "CodePen"
+        },
+        {
+          "url": "load.json",
+          "title": "Load JSON"
+        },
+        {
+          "url": "response.json",
+          "title": "Response JSON"
+        },
+        {
+          "url": "prophet.html",
+          "title": "Prophet"
+        },
+        {
+          "url": "weather.html",
+          "title": "Weather"
+        }
+      ]
+    },
+    {
+      "week": "Week 6",
+      "links": []
+    }
+  ]
+}
+  
