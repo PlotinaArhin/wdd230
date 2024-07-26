@@ -85,5 +85,123 @@
     }
   }
 
-  /*media 
-  
+  /* Media query for mobile screens */
+@media (max-width: 768px) {
+  .heros {
+    padding: 20px; /* Add some padding for mobile */
+  }
+
+  .headings h1 {
+    font-size: 36px; /* Reduce the font size for smaller screens */
+    margin-top: 30px; /* Adjust margin for spacing */
+  }
+
+  .containers {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align elements */
+    width: 100%; /* Full width on mobile */
+    margin: 30px auto; /* Adjust margin for spacing */
+  }
+
+  .heros-content {
+    font-size: 20px; /* Reduce font size for readability */
+    margin: 0 10px; /* Reduce side margins */
+    text-align: center; /* Center align text */
+  }
+
+  .heros-content h2 {
+    font-size: 24px; /* Reduce heading size */
+    margin-bottom: 15px; /* Adjust margin for spacing */
+  }
+
+  .heros-img {
+    width: 100%; /* Ensure image takes full width */
+    margin-top: 20px; /* Add margin above image */
+    display: flex; /* Flex display for centering */
+    justify-content: center; /* Center the image */
+  }
+
+  .heros-img img {
+    width: 90%; /* Slightly reduce image size */
+    max-width: 100%; /* Ensure image doesn't overflow */
+    border-radius: 10px; /* Adjust border-radius for mobile */
+  }
+
+  .cta-button {
+    font-size: 20px; /* Adjust font size for buttons */
+    padding: 10px 20px; /* Adjust padding for better touch interaction */
+    margin: 20px auto; /* Center the button and add margin */
+    display: block; /* Full width button on mobile */
+    width: fit-content; /* Fit the width of the content */
+  }
+
+  .cta-button:hover {
+    transform: scale(1.05); /* Subtle scaling effect on hover */
+  }
+
+  .social-icons {
+    height: 30px; /* Adjust icon size */
+    width: 30px; /* Adjust icon size */
+    margin: 5px; /* Adjust margin for spacing */
+  }
+}
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+  .plot-roll {
+    flex-direction: column; /* Stack the columns vertically */
+    padding: 20px; /* Reduce padding for smaller screens */
+    height: auto; /* Allow flexible height */
+  }
+
+  .plot-roll .leftBox {
+    width: 100%; /* Full width for the leftBox */
+    padding: 20px; /* Adjust padding */
+    margin-bottom: 20px; /* Add space below for separation */
+  }
+
+  .plot-roll .leftBox .content {
+    padding: 20px; /* Adjust padding for smaller screens */
+    font-size: 16px; /* Adjust font size for better readability */
+  }
+
+  .plot-roll .leftBox .content h1 {
+    font-size: 24px; /* Reduce font size */
+  }
+
+  .plot-roll .events-side {
+    width: 100%; /* Full width for events-side */
+  }
+
+  .program-item {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+    margin-bottom: 30px; /* Increase bottom margin for better spacing */
+  }
+
+  .program-item .time,
+  .program-item .clock {
+    width: 100%; /* Full width for time and clock */
+    font-size: 24px; /* Reduce font size */
+    margin-bottom: 10px; /* Add space below */
+  }
+
+  .program-item .details {
+    width: 100%; /* Full width for details */
+    font-size: 16px; /* Adjust font size */
+    padding: 10px; /* Adjust padding */
+    text-align: center; /* Center align text */
+  }
+
+  .program-item .details h3 {
+    font-size: 20px; /* Adjust font size for headings */
+    margin-top: 10px; /* Reduce top margin */
+  }
+
+  .program-item .details a {
+    display: block; /* Full width for links */
+    margin-top: 20px; /* Add margin for spacing */
+    font-size: 16px; /* Adjust font size */
+    text-align: center; /* Center align text */
+    padding: 10px; /* Adjust padding for touch devices */
+  }
+}

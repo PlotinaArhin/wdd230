@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <meta property="og:title" content="Springfield Chamber of Commerce">
     <meta property="og:type" content="website">
     <meta property="og:image" content="images/heroimage.jpeg">
@@ -22,13 +23,14 @@
         <button class="hamburger-button">☰</button>
         <button class="dark-mode-button">Toggle Dark Mode</button>
         <nav class="menu">
-            <ul>
+            <ul class="navigation">
+                <button id="close-menu" class="close-button">&times;</button>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="aboutus.html">About Us</a></li>
                 <li><a href="events.html">Events</a></li>
                 <li><a href="membership.html">Membership</a></li>
                 <li><a href="directory.html">Business Directory</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+
             </ul>
         </nav>
     </header>
@@ -50,12 +52,21 @@
         </section>
         <section class="weather">
             <h2>Weather</h2>
-            <img src="images/cloudy.png" alt="Weather Image" class="weather">
+            
             <div id="weather-card">
-                <p>Partly cloudy</p>
-                <p>Humidity: 35%</p>
-                <p>Wind Chill: N/A</p>
-            </div>
+                <p id="weather-description">Partly cloudy</p>
+                
+                
+                    <p>Temperature:  <span id="current-temp"></span></p>
+                    <!-- <figure id="humidity">
+                        <img  id="weather-icon" src="" alt="">
+                        <figcaption></figcaption>
+                    </figure> -->
+                
+                <div id="wind-chill">
+                    <span class="span">Humidity: </span>
+                    <img id="weather-icon" src="" alt="Weather Icon">
+                </div>
         </section>
         <section class="spotlights">
             <h2>Member Spotlights</h2>
@@ -83,11 +94,20 @@
                 <img src="images/instagram.png" class="social-icons" alt="Instagram icon">
             </a>
         </div>
-    </footer>
-        
+    </footer>  
     <script src="scripts/main.js"></script>
-</body>
-</html>
+    <script src="scripts/directory.js"></script>
+    <scripts src="scripts/timestamp.js"></scripts>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/hamburgerMenu.js"></script>
+    
+
+ </body>
+
+ </html>
+
+
+    
 
 
 

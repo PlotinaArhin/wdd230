@@ -201,6 +201,145 @@ a:hover {
   margin: 0;
 }
 
+/* Events page */
+.plot-roll {
+  background: #005bb5;
+  height: 100vh;
+  background-image: url("../images/chamber.jpg");
+  background-size: cover; /* Adjusted for better background image handling */
+  display: flex;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.plot-roll .leftBox {
+  width: 40%;
+  height: 100%;
+  padding-right: 50px;
+  box-sizing: border-box;
+  /* Removed float:left and flex: 1 as flex properties are sufficient */
+}
+
+.plot-roll .leftBox .content {
+  color: #fff;
+  background: rgba(0, 0, 0, .5);
+  padding: 60px;
+  transition: background-color .5s;
+}
+
+.plot-roll .leftBox .content:hover {
+  background-color: #e91e63;
+}
+
+.plot-roll .leftBox .content h1 {
+  margin: 40px 0;
+  padding: 0;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.plot-roll .leftBox .content p {
+  margin: 10px 0 0;
+  padding: 0;
+}
+
+.plot-roll .events-side {
+  flex: 1;
+  width: 60%; /* Adjusted width to fit layout */
+  height: auto; /* Adjusted height to be flexible */
+  background-color: transparent; /* Corrected to transparent */
+  box-sizing: border-box;
+}
+
+.program-item {
+  display: flex;
+  margin-bottom: 20px; /* Added margin for spacing between items */
+}
+
+.program-item .time,
+.program-item .clock {
+  width: 200px;
+  font-size: 40px;
+  border: 2px solid;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+  transition: background-color .3s;
+}
+
+.program-item .time {
+  background-color: black;
+}
+
+.program-item .clock {
+  background-color: #e91e63;
+}
+
+.program-item .time:hover {
+  background-color: #fff;
+}
+
+.program-item .clock:hover {
+  background-color: #121212;
+}
+
+.program-item .details {
+  flex: 1;
+  background-color: white;
+  border: 2px solid;
+  font-size: 20px;
+  padding: 2rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+  transition: background-color .5s;
+}
+
+.program-item .details h3 {
+  text-decoration: underline;
+  margin-top: 20px;
+  color: blue;
+}
+
+.program-item .details a {
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 40px;
+  text-align: left;
+  padding: 5px 10px;
+  border: 2px solid;
+  border-radius: 3px; /* Adjusted for better appearance */
+  transition: background-color .3s, color .3s;
+}
+
+.program-item .details:hover {
+  background-color: #337ab7;
+}
+
+.program-item .details a:hover {
+  background-color: #e91e63;
+  color: #fff;
+}
+
+/* weather section */
+.weather {
+  text-align: center;
+  margin: 20px;
+}
+
+.weather img {
+  width: 100px; /* Adjust as needed */
+  height: auto;
+}
+
+#weather-card {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+#weather-card p {
+  margin: 5px 0;
+}
 
 /* Styles for join.html */
 form {
@@ -381,7 +520,7 @@ img{
 }
 
 .weather img {
-  width: 15%;
+  width: 40%;
   height: auto;
   float: right;
 }
@@ -477,7 +616,25 @@ body.dark-mode .spotlights .spotlight {
 body.dark-mode .cta {
   background-color: #444;
 }
-
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+.close-button {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
 /* Additional Styles for discover.html */
 a:hover {
   color: #23527c;

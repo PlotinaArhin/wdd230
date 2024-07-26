@@ -1,0 +1,111 @@
+/* Events page 
+section{
+  background:#005bb5;
+  height: 100vh;
+  background-image: url("../images/chamber.jpg");
+  background-size: 100%;
+  display: flex;
+  padding:50px;
+}
+ section .leftBox{
+  width:40%;
+  height: 100%;
+  float:left;
+  flex: 1;
+  padding-right:  50px;
+  box-sizing: border-box;
+
+  
+}
+section .leftBox .content{
+  color: #fff;
+  background: rgba(0, 0, 0,.5);
+  padding:60px;
+  transition: .5s;
+
+}
+section .leftBox .content:hover{
+  background-color: #e91e63;
+}
+section .leftBox .content h1{
+  margin: 40px;;
+  padding:0;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+section .leftBox .content p{
+  margin: 10px 0 0;
+  padding:0;
+}
+section .events-side {
+  flex: 1;
+  width: 10%;
+  height: 20%;
+  box-sizing: border-box;
+  background-color: none;
+
+}
+.event-item{
+  display: flex;
+  
+}
+.event-item .time {
+  width: 200px;
+  background-color:black;
+  font-size: 40px;
+  border: 2px solid;
+  box-shadow: insert 0 0 20px 0px;
+}
+.event-item .times {
+  width: 200px;
+  background-color:#e91e63;
+  font-size: 40px;
+  border: 2px solid;
+  box-shadow: insert 0 0 20px 0px;
+}
+.event-item .times:hover{
+  background-color: #121212;
+}
+.event-item .details{
+  flex: 1;
+  background-color: white;
+  margin-right: 0px;
+  border: 2px solid ;
+  font-size: 20px;
+  padding:2rem;
+  box-shadow:0 0 20px 20px rgba(0,0,0,.5);
+  transition: .5s;
+  
+}
+.event-item .details h3{
+  text-decoration: underline;
+  margin-top:20px;
+  color: blue;
+}
+
+.event-item .details a{
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 40px;
+  text-align:left;
+ padding: 5px 10px;
+ border:2px solid;
+ border-radius: 1px;
+ transition: background-color 0.3s;
+
+}
+.event-item .time:hover{
+  background-color: #fff;
+
+}
+.event-item .details:hover{
+  background-color: #337ab7;
+
+}
+
+.event-item .details a:hover{
+  background-color: #e91e63;
+  color:#fff;
+
+}
